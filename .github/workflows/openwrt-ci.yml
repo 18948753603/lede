@@ -16,8 +16,16 @@ on:
 jobs:
 
   build_openwrt:
+  
+  
 
     name: Build OpenWrt firmware-test1
+    
+    on:
+  push:
+    branches:
+    - main
+    - release/*
 
     runs-on: ubuntu-latest
 
